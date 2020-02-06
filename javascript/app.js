@@ -105,7 +105,7 @@ for(let x = 0; x < 10; x++){
     console.log('Number ' + x);
 }
 
-// buidling a password function
+// buidling a password function/ for netsted statements
 let pswd = 'hello wolrd';
 
 if (pswd.length >= 6){
