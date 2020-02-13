@@ -59,3 +59,25 @@ function findMe(sen) {
     }
     return true;
 }
+
+//lexical scope for nested functions
+
+function outer() {
+    let hero = 'Iron-Man';
+
+    function inner() {
+        let saveMe = `${hero}, please me I am too young to die`
+        console.log(saveMe);
+    }
+    inner();
+}
+
+outer();
+
+
+//Function Expressions 
+const product = function mult(x, y) {
+    return x * y;
+}
+
+console.log(product(3, 2));
