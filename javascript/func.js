@@ -81,3 +81,46 @@ const product = function mult(x, y) {
 }
 
 console.log(product(3, 2));
+
+//Return Functions 
+
+function make(x, y) {
+    return function(num) {
+        if (num >= x && num <= y) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+
+const isWorking = make(0, 18)
+
+//ForEach concept 
+const books = [
+{
+    title: 'Wealth of nations',
+    author: ['Adam', 'Smith'],
+    rating: 3.4
+},
+{
+    title: 'Introduction to C++',
+    author: ['Sam', 'King'],
+    rating: 3.9
+},
+{
+    title: 'Blood of the Fold',
+    author: ['Terry', 'Goodkind'],
+    rating: 4.5
+},
+{
+    title: 'Martial God Asura',
+    author: ['Lieou', 'Xamin'],
+    rating: 2.8
+}
+]
+
+books.forEach(function(book) {
+    console.log(book.title.toUpperCase());
+});
