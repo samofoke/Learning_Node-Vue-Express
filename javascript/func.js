@@ -66,7 +66,7 @@ function outer() {
     let hero = 'Iron-Man';
 
     function inner() {
-        let saveMe = `${hero}, please me I am too young to die`
+        let saveMe = `${hero}, please help me I am too young to die`
         console.log(saveMe);
     }
     inner();
@@ -124,3 +124,30 @@ const books = [
 books.forEach(function(book) {
     console.log(book.title.toUpperCase());
 });
+
+//The Map 
+const text = ['slimy', 'sello', 'mpho', 'Tshepo'];
+const caps = text.map(function (t) {
+    return t.toUpperCase();
+});
+
+text;
+caps;
+
+//is even or odd using the map method
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20];
+
+const numDetail = numbers.map(function (n) {
+    return {
+        value: n,
+        isEven: n % 2 === 0
+    }
+});
+
+const joinMe = text.map(function (me) {
+    return me.toUpperCase().split('').join('.');
+});
+
+//Syntax for arrow functions
+
