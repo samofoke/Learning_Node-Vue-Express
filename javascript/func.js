@@ -150,4 +150,23 @@ const joinMe = text.map(function (me) {
 });
 
 //Syntax for arrow functions
+const simple = (m) => {
+    return m * m;
+}
+// Using arrow functions using implicit returns
+
+const evenMaster = numbers.map((set) => (
+    set % 2 === 0 ? 'EVEN' : 'ODD' 
+))
+
+//The find Method
+let Movies = [
+    "Iron"
+]
+
+
+
+
+
+
 
